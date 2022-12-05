@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       # この行にdotnetのリストアコマンドを記入してください
-      run: dotnet restore ./src/SampleApplication.csproj
+      run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
     - name: Publish
